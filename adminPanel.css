@@ -1,0 +1,77 @@
+.dashboard-wrapper {
+  max-height: 100vh;
+  padding: 0;
+  transition: all .4s ease 0s;
+}
+
+#sidebar-wrapper {
+  width: 190px;
+  background: #181D21;
+  position: fixed;
+  height: 100%;
+  z-index: 10000;
+  left: -110px;
+  transition: all .4s ease 0s;
+}
+
+#side-menu {
+  margin: 0;
+  margin-top: 0px;
+  padding: 0;
+  background-color: #181D21;
+}
+
+#side-menu li {
+  list-style-type: none;
+  display: block;
+  height: 80px;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  line-height: 80px;
+  padding: 0px 20px;
+  transition: all 0.9s ease;
+}
+
+#side-menu li:hover {
+  background-color: #E63054;
+}
+
+#side-menu li a {
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+  width: 145px;
+}
+
+.sub-icon {
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  float: right;
+  font-size: 25px;
+}
+
+#toggle-menu {
+  display: block;
+  color: #FFF;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 0px 20px 20px 10px;
+}
+
+.toggle-icon {
+  color: #FFF;
+  float: right;
+  width: 50px;
+  font-size: 35px;
+  padding: 0px 15px;
+}
+
+.active {
+  margin-left: 110px;
+}
+
+.dashboard-wrapper.active #sidebar-wrapper {
+  margin-left: 110px;
+}
+
